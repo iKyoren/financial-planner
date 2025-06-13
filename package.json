@@ -1,1 +1,18 @@
-"build": "vite build --outDir dist/client && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist"
+{
+  "name": "finplanner-calculator",
+  "version": "1.0.0",
+  "description": "Finplanner Calculator Web App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "vite build --outDir dist/client && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "esbuild": "^0.20.0"
+  },
+  "type": "module"
+}
